@@ -1,6 +1,6 @@
 Meta.DisplayName=Stardew Valley (Private Windows)
 Meta.Description=Private AMP Generic template for JunimoServer on a Windows target node.
-Meta.OS=Windows
+Meta.OS=Windows, Linux
 Meta.AarchSupport=Unknown
 Meta.Arch=x86_64
 Meta.Author=OpenAI Codex
@@ -19,7 +19,7 @@ Meta.ContainerPolicyReason=This private template launches a Windows host process
 Meta.ExtraSetupStepsURI=
 Meta.Prerequisites=[]
 Meta.ExtraContainerPackages=[]
-Meta.ConfigReleaseState=Private
+Meta.ConfigReleaseState=NotSpecified
 Meta.NoCommercialUsage=False
 Meta.ConfigVersion=1
 Meta.ReleaseNotes=Private Windows template for JunimoServer host scripts.
