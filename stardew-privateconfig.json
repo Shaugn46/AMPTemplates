@@ -1,0 +1,188 @@
+[
+  {
+    "DisplayName": "Game Directory",
+    "Description": "Absolute path to the Stardew Valley installation on the Windows target node.",
+    "FieldName": "GameDir",
+    "InputType": "text",
+    "Category": "Stardew:install",
+    "Subcategory": "Host Paths:setup:1",
+    "ParamFieldName": "GameDir",
+    "IncludeInCommandLine": false,
+    "Required": true,
+    "DefaultValue": "D:\\SteamLibrary\\steamapps\\common\\Stardew Valley"
+  },
+  {
+    "DisplayName": "API Enabled",
+    "Description": "Enable JunimoServer's HTTP API.",
+    "FieldName": "APIEnabled",
+    "InputType": "checkbox",
+    "Category": "Stardew:runtime",
+    "Subcategory": "HTTP API:network:2",
+    "ParamFieldName": "API_ENABLED",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "true",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "API Port",
+    "Description": "HTTP API port used by JunimoServer.",
+    "FieldName": "APIPort",
+    "InputType": "number",
+    "Category": "Stardew:runtime",
+    "Subcategory": "HTTP API:network:2",
+    "ParamFieldName": "API_PORT",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "8080"
+  },
+  {
+    "DisplayName": "API Key",
+    "Description": "Optional API key for JunimoServer write operations.",
+    "FieldName": "APIKey",
+    "InputType": "password",
+    "Category": "Stardew:runtime",
+    "Subcategory": "HTTP API:network:2",
+    "ParamFieldName": "API_KEY",
+    "IncludeInCommandLine": false,
+    "DefaultValue": ""
+  },
+  {
+    "DisplayName": "Server Password",
+    "Description": "Optional in-game login password. Leave empty to disable password protection.",
+    "FieldName": "ServerPassword",
+    "InputType": "password",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Security:shield:3",
+    "ParamFieldName": "SERVER_PASSWORD",
+    "IncludeInCommandLine": false,
+    "DefaultValue": ""
+  },
+  {
+    "DisplayName": "Max Login Attempts",
+    "Description": "Maximum failed login attempts before a player is kicked.",
+    "FieldName": "MaxLoginAttempts",
+    "InputType": "number",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Security:shield:3",
+    "ParamFieldName": "MAX_LOGIN_ATTEMPTS",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "3"
+  },
+  {
+    "DisplayName": "Auth Timeout Seconds",
+    "Description": "How long unauthenticated players may remain connected before being removed. Set 0 to disable.",
+    "FieldName": "AuthTimeoutSeconds",
+    "InputType": "number",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Security:shield:3",
+    "ParamFieldName": "AUTH_TIMEOUT_SECONDS",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "120"
+  },
+  {
+    "DisplayName": "Disable Rendering",
+    "Description": "Reduces rendering work for dedicated hosting. Recommended on headless/remote systems.",
+    "FieldName": "DisableRendering",
+    "InputType": "checkbox",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Performance:speedometer:4",
+    "ParamFieldName": "DISABLE_RENDERING",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "true",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "Enable Mod-Incompatible Optimizations",
+    "Description": "Enable performance optimizations that may not be compatible with every mod.",
+    "FieldName": "EnableModIncompatibleOptimizations",
+    "InputType": "checkbox",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Performance:speedometer:4",
+    "ParamFieldName": "ENABLE_MOD_INCOMPATIBLE_OPTIMIZATIONS",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "true",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "Force New Debug Game",
+    "Description": "Force creation of a fresh debug game on startup.",
+    "FieldName": "ForceNewDebugGame",
+    "InputType": "checkbox",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Performance:speedometer:4",
+    "ParamFieldName": "FORCE_NEW_DEBUG_GAME",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "false",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "Health Check Seconds",
+    "Description": "Interval used by JunimoServer's internal health checks.",
+    "FieldName": "HealthCheckSeconds",
+    "InputType": "number",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Performance:speedometer:4",
+    "ParamFieldName": "HEALTH_CHECK_SECONDS",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "300"
+  },
+  {
+    "DisplayName": "Verbose Logging",
+    "Description": "Enable more detailed logging from the mod.",
+    "FieldName": "VerboseLogging",
+    "InputType": "checkbox",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Performance:speedometer:4",
+    "ParamFieldName": "VERBOSE_LOGGING",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "false",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "Steam Username",
+    "Description": "Optional Steam account username. Usually not needed once a saved session exists.",
+    "FieldName": "SteamUsername",
+    "InputType": "text",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Steam Auth:key:5",
+    "ParamFieldName": "STEAM_USERNAME",
+    "IncludeInCommandLine": false,
+    "DefaultValue": ""
+  },
+  {
+    "DisplayName": "Steam Password",
+    "Description": "Optional Steam password. Prefer a saved session instead of storing this in AMP.",
+    "FieldName": "SteamPassword",
+    "InputType": "password",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Steam Auth:key:5",
+    "ParamFieldName": "STEAM_PASSWORD",
+    "IncludeInCommandLine": false,
+    "DefaultValue": ""
+  },
+  {
+    "DisplayName": "Steam Refresh Token",
+    "Description": "Optional Steam refresh token. Prefer leaving blank when a saved session exists on disk.",
+    "FieldName": "SteamRefreshToken",
+    "InputType": "password",
+    "Category": "Stardew:runtime",
+    "Subcategory": "Steam Auth:key:5",
+    "ParamFieldName": "STEAM_REFRESH_TOKEN",
+    "IncludeInCommandLine": false,
+    "DefaultValue": ""
+  }
+]
